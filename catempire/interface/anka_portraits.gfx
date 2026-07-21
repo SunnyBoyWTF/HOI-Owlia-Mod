@@ -109,6 +109,14 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_portrait_owlia_banana_small"
-		texturefile = "gfx/leaders/OWLIA/portrait_owlia_banana_small.dds"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_banana_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_james_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_james_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_deadfasc"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_deadfasc.dds"
 	}
 }

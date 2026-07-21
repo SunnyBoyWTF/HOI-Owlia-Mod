@@ -31,10 +31,10 @@ characters = {
 			id = -1
 		}
 		advisor = {
-			slot = political_advisor
+			slot = army_chief
 			idea_token = owlia_bloppa
 			cost = 100
-			traits = { liberal_economist }
+			traits = { superior_firepower_expert }
 		}
 		field_marshal = {
 			traits = {}
@@ -84,9 +84,9 @@ characters = {
 	owlia_dead2 = {
 		name = owlia_dead2
 		country_leader = {
-			ideology = emperor_fascism
+			ideology = despotism
 			expire = "1965.1.1.1"
-			traits = { expansionist_policies unpopular_monarch }
+			traits = { expansionist_policies }
 			id = -1
 		}
 		portraits = {
@@ -106,15 +106,15 @@ characters = {
 			slot = army_chief
 			idea_token = owlia_dead2
 			cost = 100
-			traits = { army_chief_drill_2 }
+			traits = { mass_assault_expert }
 		}
 		field_marshal = {
 			traits = {}
-			skill = 3
-			attack_skill = 2
+			skill = 4
+			attack_skill = 5
 			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 1
+			planning_skill = 3
+			logistics_skill = 5
 		}
 	}
 	owlia_torvi = {
@@ -139,7 +139,6 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = owlia_beaver
-			cost = 150
 			traits = { PRC_socialist_journalist }
 		}
 		portraits = {
@@ -148,6 +147,12 @@ characters = {
 				small = GFX_portrait_owlia_beaver_small
 			}
 		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
+		}
 	}
 	owlia_banana = {
 		name = owlia_banana
@@ -155,6 +160,38 @@ characters = {
 			slot = political_advisor
 			idea_token = owlia_banana
 			traits = { owlia_drool }
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_owlia_banana_small
+			}
+		}
+	}
+	owlia_james = {
+		name = owlia_james
+		portraits = {
+			civilian = {
+				small = GFX_portrait_owlia_james_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = owlia_james
+			traits = { GER_monarchist_jurist }
+		}
+	}
+	owlia_deadfasc = {
+		name = owlia_deadfasc
+		portraits = {
+			civilian = {
+				large = GFX_portrait_owlia_deadfasc
+			}
+		}
+		country_leader = {
+			ideology = emperor_fascism
+			expire = "1965.1.1.1"
+			traits = { expansionist_policies }
+			id = -1
 		}
 	}
 }

@@ -15,7 +15,9 @@ focus_tree = {
 		x = 42
 		y = -2
 		cost = 5
-		completion_reward = {}
+		completion_reward = {
+			add_stability = -0.1
+		}
 		ai_will_do = {
 			always = yes
 		}
@@ -27,7 +29,7 @@ focus_tree = {
 		y = 2
 		cost = 1
 		completion_reward = {
-			remove_ideas = { owlia_economy }
+			remove_ideas = { great_depression_3 }
 		}
 		prerequisite = {
 			focus = eco_lib
@@ -46,6 +48,8 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.15
 			}
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 		mutually_exclusive = {
 			focus = eco_lib
@@ -66,6 +70,8 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.15
 			}
+			add_war_support = 0.1
+			add_stability = -0.05
 		}
 		mutually_exclusive = {
 			focus = eco_soclib
@@ -86,6 +92,8 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.15
 			}
+			add_war_support = -0.05
+			add_stability = 0.1
 		}
 		mutually_exclusive = {
 			focus = eco_lib
@@ -93,22 +101,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = The_Failing_Republic
-		}
-		complete_tooltip = {
-			completion_reward = {
-				add_party_popularity = {
-					ideology = neutrality
-					popularity = -0.10
-				}
-				add_party_popularity = {
-					ideology = democratic
-					popularity = -0.05
-				}
-				add_party_popularity = {
-					ideology = fascism
-					popularity = -0.05
-				}
-			}
 		}
 	}
 	focus = {
@@ -120,8 +112,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
-				popularity = 0.15
+				popularity = 0.16
 			}
+			add_war_support = -0.05
+			add_stability = 0.1
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_3
@@ -140,8 +134,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.15
+				popularity = 0.16
 			}
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_4
@@ -160,8 +156,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.15
+				popularity = 0.16
 			}
+			add_war_support = 0.1
+			add_stability = -0.05
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_2
@@ -178,7 +176,7 @@ focus_tree = {
 		y = 2
 		cost = 1
 		completion_reward = {
-			remove_ideas = { owlia_army }
+			add_ideas = { limited_conscription }
 		}
 		prerequisite = {
 			focus = OWL_focus_4
@@ -195,8 +193,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
-				popularity = 0.15
+				popularity = 0.16
 			}
+			add_war_support = -0.05
+			add_stability = 0.1
 		}
 		prerequisite = {
 			focus = The_Failing_Republic
@@ -215,8 +215,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.15
+				popularity = 0.16
 			}
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 		prerequisite = {
 			focus = The_Failing_Republic
@@ -235,8 +237,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.15
+				popularity = 0.16
 			}
+			add_war_support = 0.1
+			add_stability = -0.05
 		}
 		prerequisite = {
 			focus = The_Failing_Republic
@@ -253,7 +257,7 @@ focus_tree = {
 		y = 2
 		cost = 1
 		completion_reward = {
-			remove_ideas = { owlia_political }
+			remove_ideas = { FRA_disjointed_government }
 		}
 		prerequisite = {
 			focus = OWL_focus_1
@@ -268,7 +272,7 @@ focus_tree = {
 		y = 4
 		cost = 5
 		completion_reward = {
-			add_stability = 20
+			add_stability = 0.20
 		}
 		prerequisite = {
 			focus = OWL_focus_7
@@ -283,7 +287,7 @@ focus_tree = {
 	focus = {
 		id = Democratic_Victory
 		icon = GFX_goal_support_democracy
-		x = 40
+		x = 41
 		y = 6
 		cost = 2
 		completion_reward = {
@@ -309,13 +313,14 @@ focus_tree = {
 	focus = {
 		id = Fascist_victory
 		icon = GFX_focus_ITA_generic_fascist_workers
-		x = 50
+		x = 61
 		y = 6
 		cost = 2
 		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
 			}
+			promote_character = owlia_nebbie
 		}
 		prerequisite = {
 			focus = OWL_elec
@@ -361,7 +366,7 @@ focus_tree = {
 	focus = {
 		id = Tied_Elections
 		icon = GFX_focus_CHI_cradle_of_civilization
-		x = 45
+		x = 52
 		y = 6
 		cost = 2
 		prerequisite = {
@@ -486,7 +491,15 @@ focus_tree = {
 		x = 21
 		y = 2
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			add_mastery_bonus = {
+				bonus = 0.5
+				days = 365
+				folder = land
+				grand_doctrine = mobile_warfare
+				name = my_blitzkrieg_bonus
+			}
+		}
 		prerequisite = {
 			focus = OWL_focus_9
 		}
@@ -500,7 +513,15 @@ focus_tree = {
 		x = 23
 		y = 2
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			add_mastery_bonus = {
+				bonus = 0.5
+				days = 365
+				folder = land
+				grand_doctrine = superior_firepower
+				name = my_sf_bonus
+			}
+		}
 		prerequisite = {
 			focus = OWL_focus_9
 		}
@@ -515,14 +536,13 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			add_state_claim = 64
-			add_state_claim = 66
-			add_state_claim = 67
-			add_state_claim = 68
 			add_state_claim = 155
+			add_state_claim = 43
+			add_state_claim = 973
+			add_state_claim = 154
+			add_state_claim = 974
 		}
 		prerequisite = {
-			focus = OWL_focus_13_copy
 			focus = OWL_focus_13_copy_copy
 		}
 	}
@@ -545,6 +565,10 @@ focus_tree = {
 			NOT = {
 				war_with = SOV
 			}
+		}
+		completion_reward = {
+			promote_character = owlia_goober
+			set_cosmetic_tag = owlia_monarchy
 		}
 	}
 	focus = {
@@ -572,6 +596,7 @@ focus_tree = {
 					autonomy_state = autonomy_puppet
 				}
 			}
+			promote_character = owlia_beaver
 		}
 		prerequisite = {
 			focus = Communist_Victory
@@ -626,38 +651,43 @@ focus_tree = {
 		id = OWL_Integrating_Hungary
 		icon = GFX_focus_por_workers_of_iberia
 		x = 25
-		y = 12
+		y = 13
 		cost = 10
 		completion_reward = {
-			completion_reward = {
-				add_core_of = 64
-				add_core_of = 66
-				add_core_of = 67
-				add_core_of = 68
-				add_core_of = 155
-			}
+			add_state_core = 155
+			add_state_core = 43
+			add_state_core = 973
+			add_state_core = 154
+			add_state_core = 974
 		}
 		prerequisite = {
 			focus = OWL_focus_13_copy_copy_copy
+		}
+		available = {
+			controls_state = 48
 		}
 	}
 	focus = {
 		id = OWL_Integrating_Hungary_copy
 		icon = GFX_focus_por_workers_of_iberia
 		x = 23
-		y = 12
+		y = 11
 		cost = 10
 		completion_reward = {
-			completion_reward = {
-				add_core_of = 64
-				add_core_of = 66
-				add_core_of = 67
-				add_core_of = 68
-				add_core_of = 155
-			}
+			add_core_of = 46
+			add_core_of = 79
+			add_core_of = 81
+			add_core_of = 971
+			add_core_of = 77
+			add_core_of = 766
+			add_core_of = 78
+			add_core_of = 80
 		}
 		prerequisite = {
 			focus = OWL_focus_13_copy_copy_copy_copy
+		}
+		available = {
+			controls_state = 76
 		}
 	}
 	focus = {
@@ -674,6 +704,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_ideas = { CHL_socialist_land_reform }
 		}
 		prerequisite = {
 			focus = OWL_focus_13_copy
@@ -728,7 +759,7 @@ focus_tree = {
 		id = OWL_focus_13_copy_copy_copy_copy_copy_copy_copy
 		icon = GFX_focus_generic_befriend_hungary
 		x = 32
-		y = 12
+		y = 11
 		cost = 10
 		completion_reward = {
 			HUN = {
@@ -777,7 +808,502 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			remove_advisor = owlia_seb
 			remove_character = owlia_seb
+			add_ideas = fascism_banned
+		}
+	}
+	focus = {
+		id = owl_ung
+		icon = GFX_focus_HUN_reinstate_the_lenin_boys
+		x = 32
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_13_copy_copy_copy_copy_copy_copy_copy
+		}
+		available = {
+			HUN = {
+				has_government = communism
+				NOT = {
+					has_civil_war = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Destroying_Fascism_Abroad
+		icon = GFX_focus_attack_italy
+		x = 35
+		y = 10
+		cost = 10
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_europe = yes
+					is_major = yes
+					has_government = fascism
+				}
+				add_wargoal = {
+					target = ROOT
+					type = change_government
+				}
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_13_copy_copy_copy_copy_copy_copy_copy_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_15
+		icon = GFX_focus_rocketry
+		x = 23
+		y = 4
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_12_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_16
+		icon = GFX_focus_AFG_revive_the_1923_constitution
+		x = 24
+		y = 15
+		cost = 10
+		completion_reward = {
+			add_stability = 0.3
+		}
+		prerequisite = {
+			focus = OWL_Integrating_Hungary
+		}
+		prerequisite = {
+			focus = OWL_Integrating_Hungary_copy
+		}
+	}
+	focus = {
+		id = The_Gooberist_Empire
+		icon = GFX_focus_PRC_the_central_committee
+		x = 29
+		y = 15
+		cost = 10
+		completion_reward = {
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = OWL_focus_14_copy
+		}
+		prerequisite = {
+			focus = owl_ung
+		}
+	}
+	focus = {
+		id = Joining_the_allies
+		icon = GFX_focus_chi_british_cooperation
+		x = 39
+		y = 11
+		cost = 10
+		completion_reward = {
+			ENG = {
+				add_to_faction = ROOT
+			}
+		}
+		prerequisite = {
+			focus = Democratic_Victory
+		}
+		available = {
+			ENG = {
+				has_government = democratic
+				opinion = {
+					target = ROOT
+					value > 39
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = Joining_the_allies_copy
+		}
+	}
+	focus = {
+		id = Joining_the_allies_copy
+		icon = GFX_goal_generic_neutrality_focus
+		x = 45
+		y = 11
+		cost = 10
+		completion_reward = {
+			add_ideas = { deterrence }
+		}
+		prerequisite = {
+			focus = OWL_focus_24
+			focus = Democratic_Victory
+		}
+		available = {
+			ENG = {
+				has_government = democratic
+				opinion = {
+					target = ROOT
+					value > 39
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = Joining_the_allies
+		}
+	}
+	focus = {
+		id = OWL_focus_17
+		icon = GFX_focus_HUN_proclaim_greater_hungary
+		x = 41
+		y = 14
+		cost = 1
+		available = {
+			has_defensive_war_with = HUN
+		}
+		prerequisite = {
+			focus = Joining_the_allies
+			focus = Joining_the_allies_copy
+		}
+		mutually_exclusive = {
+			focus = cede_to_hungary
+		}
+		bypass = {
+			has_offensive_war_with = HUN
+			NOT = {
+				country_exists = HUN
+			}
+		}
+	}
+	focus = {
+		id = OWL_focus_18
+		icon = GFX_focus_PRC_develop_the_army
+		x = 39
+		y = 16
+		cost = 3
+		completion_reward = {
+			add_manpower = 100000
+			add_war_support = 0.1
+		}
+		prerequisite = {
+			focus = OWL_focus_17
+		}
+	}
+	focus = {
+		id = OWL_focus_18_copy
+		icon = GFX_focus_JAP_expand_the_showa_research_association
+		x = 43
+		y = 16
+		cost = 3
+		completion_reward = {
+			army_experience = 80
+		}
+		prerequisite = {
+			focus = OWL_focus_17
+		}
+	}
+	focus = {
+		id = allied_investments
+		icon = GFX_focus_generic_money_for_equipment
+		x = 39
+		y = 13
+		cost = 10
+		completion_reward = {
+			765 = {
+				add_building_construction = {
+					type = military_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		prerequisite = {
+			focus = Joining_the_allies
+		}
+	}
+	focus = {
+		id = cede_to_hungary
+		icon = GFX_focus_GER_party_chancellor_bormann
+		x = 44
+		y = 14
+		cost = 7
+		completion_reward = {
+			every_enemy_country = {
+				white_peace = ROOT
+			}
+			HUN = {
+				transfer_state = 82
+				transfer_state = 177
+			}
+		}
+		available = {
+			has_war_with = HUN
+		}
+		prerequisite = {
+			focus = Joining_the_allies_copy
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_17
+		}
+	}
+	focus = {
+		id = OWL_focus_19
+		icon = GFX_focus_HUN_hungarian_tradition
+		x = 41
+		y = 16
+		cost = 10
+		completion_reward = {
+			add_state_claim = 43
+			add_state_claim = 154
+			add_state_claim = 155
+			add_state_claim = 156
+			add_state_claim = 157
+			add_state_claim = 158
+		}
+		prerequisite = {
+			focus = OWL_focus_17
+		}
+		available = {
+			surrender_progress < 0.1
+		}
+	}
+	focus = {
+		id = OWL_focus_20
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 44
+		y = 18
+		cost = 10
+		completion_reward = {
+			add_stability = 0.1
+		}
+		prerequisite = {
+			focus = cede_to_hungary
+			focus = OWL_focus_19
+		}
+		available = {
+			has_completed_focus = Democratic_Victory
+		}
+	}
+	focus = {
+		id = OWL_focus_21
+		icon = GFX_focus_IRQ_construct_the_kut_barrage
+		x = 41
+		y = 9
+		cost = 10
+		completion_reward = {
+			add_stability = 0.1
+		}
+		prerequisite = {
+			focus = Democratic_Victory
+		}
+		select_effect = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = OWL_focus_21_copy
+		icon = GFX_focus_ICE_break_with_the_crown
+		x = 37
+		y = 8
+		cost = 10
+		completion_reward = {
+			add_stability = 0.1
+		}
+		prerequisite = {
+			focus = Democratic_Victory
+		}
+	}
+	focus = {
+		id = cede_to_hungary_copy
+		icon = GFX_goal_generic_construct_civilian
+		x = 45
+		y = 13
+		cost = 10
+		completion_reward = {
+			765 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		available = {
+			has_war_with = HUN
+		}
+		prerequisite = {
+			focus = Joining_the_allies_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_22
+		icon = GFX_focus_generic_monarchy_2
+		x = 52
+		y = 8
+		cost = 10
+		completion_reward = {
+			promote_character = owlia_dead2
+			start_civil_war = {
+				ideology = democratic
+				ruling_party = democratic
+				size = 0.4
+			}
+		}
+		prerequisite = {
+			focus = Tied_Elections
+		}
+	}
+	focus = {
+		id = OWL_focus_23
+		icon = GFX_focus_generic_spread_fascism
+		x = 57
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_27
+			focus = OWL_focus_29
+		}
+	}
+	focus = {
+		id = OWL_focus_24
+		icon = GFX_focus_generic_monarchy_1
+		x = 50
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_22
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_26
+		}
+	}
+	focus = {
+		id = OWL_focus_25
+		icon = GFX_focus_GER_monarchy_compromise
+		x = 52
+		y = 11
+		cost = 10
+		completion_reward = {
+			add_stability = 15
+		}
+		prerequisite = {
+			focus = OWL_focus_22
+		}
+	}
+	focus = {
+		id = OWL_focus_26
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 57
+		y = 9
+		cost = 10
+		completion_reward = {
+			promote_character = owlia_deadfasc
+		}
+		prerequisite = {
+			focus = OWL_focus_22
+			focus = Fascist_victory
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_24
+			focus = OWL_focus_29
+		}
+	}
+	focus = {
+		id = OWL_focus_23_copy
+		icon = GFX_focus_generic_attack_hungary
+		x = 56
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_23
+		}
+	}
+	focus = {
+		id = OWL_focus_23_copy_copy
+		icon = GFX_focus_generic_attack_romania
+		x = 58
+		y = 16
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_23
+		}
+	}
+	focus = {
+		id = OWL_focus_23_copy_copy_copy
+		icon = GFX_goal_unknown
+		x = 57
+		y = 20
+		cost = 10
+		completion_reward = {
+			add_core_of = 46
+			add_core_of = 79
+			add_core_of = 81
+			add_core_of = 971
+			add_core_of = 77
+			add_core_of = 766
+			add_core_of = 78
+			add_core_of = 80
+		}
+	}
+	focus = {
+		id = OWL_focus_23_copy_copy_copy_copy
+		icon = GFX_goal_unknown
+		x = 56
+		y = 18
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_23_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_27
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 55
+		y = 12
+		cost = 10
+		completion_reward = {}
+		select_effect = {
+			add_ideas = { communism_banned SWI_democratic_party_banned_idea }
+		}
+		prerequisite = {
+			focus = OWL_focus_25
+		}
+		prerequisite = {
+			focus = OWL_focus_26
+		}
+	}
+	focus = {
+		id = OWL_focus_28
+		icon = GFX_focus_ETH_sway_the_warlords
+		x = 52
+		y = 13
+		cost = 10
+		completion_reward = {
+			add_political_power = 300
+			add_stability = -0.1
+		}
+		prerequisite = {
+			focus = OWL_focus_25
+		}
+	}
+	focus = {
+		id = OWL_focus_29
+		icon = GFX_focus_ITA_guardia_nazionale_repubblicana
+		x = 62
+		y = 9
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = Fascist_victory
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_26
 		}
 	}
 }

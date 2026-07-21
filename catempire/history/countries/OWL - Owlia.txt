@@ -1,6 +1,6 @@
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.2
+set_stability = 0.1
+set_war_support = 0.1
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -96,7 +96,7 @@ if = {
 }
 recruit_character = owlia_nex
 recruit_character = owlia_bloppa
-add_ideas = { owlia_economy owlia_political owlia_missinarmy }
+add_ideas = { great_depression_3 FRA_disjointed_government disarmed_nation }
 recruit_character = owlia_dead2
 recruit_character = owlia_goober
 recruit_character = owlia_nebbie
@@ -105,3 +105,7 @@ recruit_character = owlia_charlie
 recruit_character = owlia_torvi
 recruit_character = owlia_jax
 recruit_character = owlia_seb
+recruit_character = owlia_garon
+recruit_character = owlia_banana
+recruit_character = owlia_james
+promote_character = owlia_nex
