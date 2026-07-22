@@ -109,3 +109,7 @@ recruit_character = owlia_garon
 recruit_character = owlia_banana
 recruit_character = owlia_james
 promote_character = owlia_nex
+recruit_character = owlia_deadfasc
+recruit_character = owlia_rehowl
+recruit_character = owlia_krabat
+recruit_character = owlia_milo

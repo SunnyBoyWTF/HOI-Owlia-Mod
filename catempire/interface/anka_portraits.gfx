@@ -119,4 +119,24 @@ spriteTypes = {
 		name = "GFX_portrait_owlia_deadfasc"
 		texturefile = "gfx/leaders/OWL/portrait_owlia_deadfasc.dds"
 	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_rehowl_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_rehowl_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_rehowl"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_rehowl.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_krabat_small"
+		texturefile = "gfx/leaders/OWLIA/portrait_owlia_krabat_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_krabat"
+		texturefile = "gfx/leaders/OWLIA/portrait_owlia_krabat.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_milo_small"
+		texturefile = "gfx/leaders/OWLIA/portrait_owlia_milo_small.dds"
+	}
 }

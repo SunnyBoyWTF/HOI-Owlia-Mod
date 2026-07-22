@@ -150,21 +150,21 @@ characters = {
 		country_leader = {
 			ideology = stalinism
 			expire = "1965.1.1.1"
-			traits = {}
+			traits = { AST_orthodox_stalinist }
 			id = -1
 		}
 	}
 	owlia_banana = {
 		name = owlia_banana
-		advisor = {
-			slot = political_advisor
-			idea_token = owlia_banana
-			traits = { owlia_drool }
-		}
 		portraits = {
 			civilian = {
 				small = GFX_portrait_owlia_banana_small
 			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = owlia_banana
+			traits = { owlia_drool }
 		}
 	}
 	owlia_james = {
@@ -192,6 +192,30 @@ characters = {
 			expire = "1965.1.1.1"
 			traits = { expansionist_policies }
 			id = -1
+		}
+	}
+	owlia_rehowl = {
+		name = owlia_rehowl
+		portraits = {
+			civilian = {
+				small = GFX_portrait_owlia_rehowl_small
+				large = GFX_portrait_owlia_rehowl
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = owlia_rehowl
+			cost = 50
+			traits = { silent_workhorse }
+		}
+	}
+	owlia_seb = {
+		name = owlia_seb
+		advisor = {
+			slot = political_advisor
+			idea_token = owlia_seb
+			cost = 90
+			traits = { fascist_corporatist }
 		}
 	}
 }
