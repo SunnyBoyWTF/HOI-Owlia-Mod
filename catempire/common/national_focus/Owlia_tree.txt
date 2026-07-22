@@ -1111,7 +1111,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_21
 		icon = GFX_focus_IRQ_construct_the_kut_barrage
-		x = 38
+		x = 39
 		y = 9
 		cost = 10
 		completion_reward = {
@@ -1128,8 +1128,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_21_copy
 		icon = GFX_focus_ICE_break_with_the_crown
-		x = 38
-		y = 7
+		x = 44
+		y = 8
 		cost = 10
 		completion_reward = {
 			add_stability = 0.1
@@ -1623,25 +1623,28 @@ focus_tree = {
 		id = OWL_focus_38
 		icon = GFX_goal_reichsautobahn
 		x = 62
-		y = 1
+		y = 2
 		cost = 10
 		completion_reward = {
 			82 = {
-				set_building_level = {
-					building = infrastructure
-					level = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 			83 = {
-				set_building_level = {
-					building = infrastructure
-					level = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 			84 = {
-				set_building_level = {
-					building = infrastructure
-					level = 5
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -1688,7 +1691,7 @@ focus_tree = {
 		id = OWL_focus_39
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		x = 42
-		y = 7
+		y = 8
 		cost = 10
 		completion_reward = {
 			add_stability = 0.1
@@ -1697,18 +1700,24 @@ focus_tree = {
 		prerequisite = {
 			focus = Democratic_Victory
 		}
+		mutually_exclusive = {
+			focus = OWL_focus_40
+		}
 	}
 	focus = {
 		id = OWL_focus_40
 		icon = GFX_focus_generic_social_democracy
 		x = 36
-		y = 7
+		y = 8
 		cost = 10
 		completion_reward = {
 			add_stability = 5
 		}
 		prerequisite = {
 			focus = Democratic_Victory
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_39
 		}
 	}
 	focus = {
