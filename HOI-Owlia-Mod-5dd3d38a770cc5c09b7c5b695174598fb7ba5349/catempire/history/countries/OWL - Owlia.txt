@@ -113,3 +113,4 @@ recruit_character = owlia_deadfasc
 recruit_character = owlia_rehowl
 recruit_character = owlia_krabat
 recruit_character = owlia_milo
+recruit_character = owlia_logry

@@ -34,3 +34,7 @@
  OWL_Monarchy_communism:0 "GR Owlia"
  OWL_Monarchy_communism_DEF:0 "Gooberist Republic of Owlia"
  OWL_Monarchy_communism_ADJ:0 "Owlian"
+ OWL_Monarchy_ADJ:0 "Owlian"
+ OWL_Monarchy_democratic:0 "Republic of Owlia"
+ OWL_Monarchy_democratic_DEF:0 "Democratic Republic of Owlia"
+ OWL_Monarchy_democratic_ADJ:0 "Owlian"

@@ -139,4 +139,32 @@ spriteTypes = {
 		name = "GFX_portrait_owlia_milo_small"
 		texturefile = "gfx/leaders/OWLIA/portrait_owlia_milo_small.dds"
 	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_logry"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_logry.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_logry_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_logry_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_logry_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_logry_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_goober_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_goober_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_goober_navy"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_goober_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_goober_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_goober_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_goober_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_goober_army_small.dds"
+	}
 }
