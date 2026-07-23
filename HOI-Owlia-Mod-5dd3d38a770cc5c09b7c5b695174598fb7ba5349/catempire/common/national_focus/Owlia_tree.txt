@@ -11,7 +11,7 @@ focus_tree = {
 	reset_on_civilwar = no
 	focus = {
 		id = The_Failing_Republic
-		icon = GFX_focus_DEN_civilian_preparations
+		icon = GFX_focus_generic_swooping_falcon
 		x = 40
 		y = -2
 		cost = 5
@@ -27,7 +27,7 @@ focus_tree = {
 		icon = GFX_focus_AFG_a_modern_economy
 		x = 33
 		y = 2
-		cost = 1
+		cost = 3
 		completion_reward = {
 			remove_ideas = { great_depression_3 }
 		}
@@ -174,7 +174,7 @@ focus_tree = {
 		icon = GFX_focus_AFG_a_modern_economy
 		x = 40
 		y = 2
-		cost = 1
+		cost = 3
 		completion_reward = {
 			add_ideas = { limited_conscription }
 		}
@@ -255,7 +255,7 @@ focus_tree = {
 		icon = GFX_focus_POL_complete_april_constitution
 		x = 47
 		y = 2
-		cost = 1
+		cost = 3
 		completion_reward = {
 			remove_ideas = { FRA_disjointed_government }
 		}
@@ -290,11 +290,6 @@ focus_tree = {
 		x = 39
 		y = 6
 		cost = 2
-		completion_reward = {
-			set_politics = {
-				ruling_party = democratic
-			}
-		}
 		prerequisite = {
 			focus = OWL_elec
 		}
@@ -313,7 +308,7 @@ focus_tree = {
 	focus = {
 		id = Fascist_victory
 		icon = GFX_focus_ITA_generic_fascist_workers
-		x = 59
+		x = 61
 		y = 6
 		cost = 2
 		completion_reward = {
@@ -343,11 +338,6 @@ focus_tree = {
 		x = 23
 		y = 6
 		cost = 2
-		completion_reward = {
-			set_politics = {
-				ruling_party = communism
-			}
-		}
 		prerequisite = {
 			focus = OWL_elec
 		}
@@ -361,6 +351,12 @@ focus_tree = {
 		}
 		bypass = {
 			has_government = communism
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -390,7 +386,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_8
 		icon = GFX_focus_generic_diverse_army
-		x = 75
+		x = 72
 		y = -2
 		cost = 5
 		completion_reward = {
@@ -403,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_9
 		icon = GFX_focus_INS_elevate_elite_infantry
-		x = 73
+		x = 67
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -470,8 +466,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_11
 		icon = GFX_goal_generic_army_motorized
-		x = 75
-		y = 2
+		x = 68
+		y = 4
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -489,7 +485,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_12
 		icon = GFX_focus_generic_heavy_tank
-		x = 71
+		x = 64
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -498,6 +494,85 @@ focus_tree = {
 				bonus = 1.0
 				uses = 3
 				category = cat_medium_armor
+			}
+			division_template = {
+				name = "Medium Tank Division"
+				regiments = {
+					motorized = {
+						x = 0
+						y = 0
+					}
+					motorized = {
+						x = 0
+						y = 1
+					}
+					motorized = {
+						x = 0
+						y = 2
+					}
+					motorized = {
+						x = 0
+						y = 3
+					}
+					motorized = {
+						x = 0
+						y = 4
+					}
+					medium_armor = {
+						x = 1
+						y = 0
+					}
+					medium_armor = {
+						x = 1
+						y = 1
+					}
+					medium_armor = {
+						x = 1
+						y = 2
+					}
+					medium_armor = {
+						x = 1
+						y = 3
+					}
+					medium_armor = {
+						x = 1
+						y = 4
+					}
+					medium_armor = {
+						x = 2
+						y = 0
+					}
+					medium_armor = {
+						x = 2
+						y = 1
+					}
+					medium_armor = {
+						x = 2
+						y = 2
+					}
+					medium_armor = {
+						x = 2
+						y = 3
+					}
+					medium_armor = {
+						x = 2
+						y = 4
+					}
+				}
+				support = {
+					mot_recon = {
+						x = 0
+						y = 0
+					}
+					engineer = {
+						x = 0
+						y = 1
+					}
+					artillery = {
+						x = 0
+						y = 2
+					}
+				}
 			}
 		}
 		prerequisite = {
@@ -510,7 +585,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_12_copy
 		icon = GFX_goal_generic_army_artillery2
-		x = 73
+		x = 66
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -556,7 +631,7 @@ focus_tree = {
 		id = OWL_focus_13
 		icon = GFX_focus_HUN_a_revolutionary_greater_hungary
 		x = 21
-		y = 10
+		y = 11
 		cost = 10
 		completion_reward = {
 			add_state_claim = 155
@@ -573,7 +648,7 @@ focus_tree = {
 		id = OWL_focus_13_copy
 		icon = GFX_focus_PRC_join_comintern
 		x = 27
-		y = 8
+		y = 9
 		cost = 10
 		prerequisite = {
 			focus = Communist_Victory
@@ -598,7 +673,7 @@ focus_tree = {
 		id = OWL_focus_13_copy_copy
 		icon = GFX_goal_anti_comintern_pact
 		x = 20
-		y = 8
+		y = 9
 		cost = 10
 		completion_reward = {
 			completion_reward = {
@@ -620,9 +695,11 @@ focus_tree = {
 				}
 			}
 			promote_character = owlia_beaver
-		}
-		prerequisite = {
-			focus = Communist_Victory
+			retire_character = owlia_bloppa
+			retire_character = owlia_charlie
+			retire_character = owlia_logry
+			retire_character = owlia_kit
+			retire_character = owlia_rehowl
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_13_copy
@@ -635,12 +712,15 @@ focus_tree = {
 				war_with = SOV
 			}
 		}
+		prerequisite = {
+			focus = OWL_focus_44
+		}
 	}
 	focus = {
 		id = OWL_focus_13_copy_copy_copy
 		icon = GFX_focus_generic_attack_hungary
 		x = 21
-		y = 11
+		y = 12
 		cost = 10
 		completion_reward = {
 			SOV = {
@@ -659,7 +739,7 @@ focus_tree = {
 		id = OWL_focus_13_copy_copy_copy_copy
 		icon = GFX_focus_generic_attack_romania
 		x = 19
-		y = 10
+		y = 11
 		cost = 10
 		completion_reward = {
 			SOV = {
@@ -678,7 +758,7 @@ focus_tree = {
 		id = OWL_Integrating_Hungary
 		icon = GFX_focus_por_workers_of_iberia
 		x = 21
-		y = 13
+		y = 14
 		cost = 10
 		completion_reward = {
 			add_state_core = 155
@@ -698,7 +778,7 @@ focus_tree = {
 		id = OWL_Integrating_Hungary_copy
 		icon = GFX_focus_por_workers_of_iberia
 		x = 19
-		y = 11
+		y = 12
 		cost = 10
 		completion_reward = {
 			add_state_core = 46
@@ -709,6 +789,10 @@ focus_tree = {
 			add_state_core = 766
 			add_state_core = 78
 			add_state_core = 80
+			SOV = {
+				annex_state = 766
+				annex_state = 78
+			}
 		}
 		prerequisite = {
 			focus = OWL_focus_13_copy_copy_copy_copy
@@ -721,7 +805,7 @@ focus_tree = {
 		id = OWL_focus_14
 		icon = GFX_focus_AUS_courting_the_princess_of_industry
 		x = 23
-		y = 10
+		y = 11
 		cost = 10
 		completion_reward = {
 			84 = {
@@ -742,7 +826,7 @@ focus_tree = {
 		id = OWL_focus_14_copy
 		icon = GFX_focus_GER_the_peoples_victory
 		x = 25
-		y = 10
+		y = 11
 		cost = 10
 		completion_reward = {
 			add_stability = 0.05
@@ -756,7 +840,7 @@ focus_tree = {
 		id = OWL_focus_13_copy_copy_copy_copy_copy
 		icon = GFX_focus_generic_communist_asia
 		x = 27
-		y = 10
+		y = 11
 		cost = 10
 		prerequisite = {
 			focus = OWL_focus_13_copy
@@ -771,7 +855,7 @@ focus_tree = {
 		id = OWL_focus_13_copy_copy_copy_copy_copy_copy
 		icon = GFX_focus_generic_secret_service_agency
 		x = 29
-		y = 10
+		y = 11
 		cost = 10
 		prerequisite = {
 			focus = OWL_focus_13_copy
@@ -786,7 +870,7 @@ focus_tree = {
 		id = OWL_focus_13_copy_copy_copy_copy_copy_copy_copy
 		icon = GFX_focus_generic_befriend_hungary
 		x = 28
-		y = 12
+		y = 13
 		cost = 10
 		completion_reward = {
 			HUN = {
@@ -813,11 +897,21 @@ focus_tree = {
 	}
 	focus = {
 		id = Secret_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ARG_state_atheism
 		x = 10
 		y = 0
-		cost = 10
-		completion_reward = {}
+		cost = 0.2
+		completion_reward = {
+			ROM = {
+				annex_country = {
+					target = OWL
+					transfer_troops = yes
+				}
+			}
+		}
+		available = {
+			is_ai = no
+		}
 	}
 	focus = {
 		id = OWL_focus_13_copy_copy_copy_copy_copy_copy_copy_copy
@@ -838,18 +932,23 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			remove_advisor = owlia_seb
-			remove_character = owlia_seb
 			add_ideas = fascism_banned
-			remove_advisor = owlia_krabat
-			remove_character = owlia_krabat
+			start_civil_war = {
+				ideology = fascism
+				size = 0.1
+			}
+			retire_character = owlia_dead2
+			retire_character = owlia_krabat
+			retire_character = owlia_milo
+			retire_character = owlia_seb
+			retire_character = owlia_nebbie
 		}
 	}
 	focus = {
 		id = owl_ung
 		icon = GFX_focus_HUN_reinstate_the_lenin_boys
 		x = 28
-		y = 14
+		y = 15
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
@@ -892,11 +991,19 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_15
 		icon = GFX_focus_rocketry
-		x = 72
+		x = 66
 		y = 5
 		cost = 10
 		prerequisite = {
 			focus = OWL_focus_12_copy
+		}
+		select_effect = {
+			add_tech_bonus = {
+				name = rocket_artillery_bonus
+				bonus = 0.5
+				uses = 3
+				technology = rocket_artillery
+			}
 		}
 	}
 	focus = {
@@ -938,13 +1045,15 @@ focus_tree = {
 	focus = {
 		id = Joining_the_allies
 		icon = GFX_focus_chi_british_cooperation
-		x = 36
-		y = 10
+		x = 37
+		y = 12
 		cost = 10
 		completion_reward = {
 			ENG = {
 				add_to_faction = ROOT
 			}
+			add_stability = -0.1
+			add_war_support = 0.1
 		}
 		available = {
 			ENG = {
@@ -957,6 +1066,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = Joining_the_allies_copy
+			focus = OWL_focus_45
 		}
 		prerequisite = {
 			focus = OWL_focus_40
@@ -966,13 +1076,19 @@ focus_tree = {
 		id = Joining_the_allies_copy
 		icon = GFX_goal_generic_neutrality_focus
 		x = 41
-		y = 10
+		y = 12
 		cost = 10
 		completion_reward = {
 			add_ideas = { deterrence }
+			add_stability = 0.2
+			add_war_support = -0.2
+			set_rule = {
+				can_join_factions = no
+			}
 		}
 		mutually_exclusive = {
 			focus = Joining_the_allies
+			focus = OWL_focus_45
 		}
 		prerequisite = {
 			focus = OWL_focus_39
@@ -984,7 +1100,7 @@ focus_tree = {
 		id = OWL_focus_17
 		icon = GFX_focus_HUN_proclaim_greater_hungary
 		x = 38
-		y = 12
+		y = 14
 		cost = 1
 		available = {
 			has_defensive_war_with = HUN
@@ -1002,12 +1118,15 @@ focus_tree = {
 				country_exists = HUN
 			}
 		}
+		completion_reward = {
+			add_war_support = 0.2
+		}
 	}
 	focus = {
 		id = OWL_focus_18
 		icon = GFX_focus_PRC_develop_the_army
 		x = 37
-		y = 14
+		y = 16
 		cost = 3
 		completion_reward = {
 			add_manpower = 100000
@@ -1020,8 +1139,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_18_copy
 		icon = GFX_focus_JAP_expand_the_showa_research_association
-		x = 41
-		y = 14
+		x = 40
+		y = 15
 		cost = 3
 		completion_reward = {
 			army_experience = 80
@@ -1033,11 +1152,11 @@ focus_tree = {
 	focus = {
 		id = allied_investments
 		icon = GFX_focus_generic_money_for_equipment
-		x = 33
-		y = 12
+		x = 35
+		y = 14
 		cost = 10
 		completion_reward = {
-			765 = {
+			84 = {
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1054,7 +1173,7 @@ focus_tree = {
 		id = cede_to_hungary
 		icon = GFX_focus_GER_party_chancellor_bormann
 		x = 42
-		y = 12
+		y = 14
 		cost = 7
 		completion_reward = {
 			every_enemy_country = {
@@ -1062,7 +1181,6 @@ focus_tree = {
 			}
 			HUN = {
 				transfer_state = 76
-				transfer_state = 84
 			}
 		}
 		available = {
@@ -1079,7 +1197,7 @@ focus_tree = {
 		id = OWL_focus_19
 		icon = GFX_focus_HUN_hungarian_tradition
 		x = 39
-		y = 14
+		y = 16
 		cost = 10
 		completion_reward = {
 			add_state_claim = 154
@@ -1094,8 +1212,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_20
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		x = 43
-		y = 16
+		x = 40
+		y = 21
 		cost = 10
 		completion_reward = {
 			add_stability = 0.1
@@ -1111,9 +1229,9 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_21
 		icon = GFX_focus_IRQ_construct_the_kut_barrage
-		x = 39
-		y = 9
-		cost = 10
+		x = 40
+		y = 7
+		cost = 3
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -1121,16 +1239,15 @@ focus_tree = {
 			add_stability = -0.05
 		}
 		prerequisite = {
-			focus = OWL_focus_39
-			focus = OWL_focus_40
+			focus = Democratic_Victory
 		}
 	}
 	focus = {
 		id = OWL_focus_21_copy
 		icon = GFX_focus_ICE_break_with_the_crown
-		x = 44
-		y = 8
-		cost = 10
+		x = 38
+		y = 7
+		cost = 3
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -1142,10 +1259,10 @@ focus_tree = {
 		id = cede_to_hungary_copy
 		icon = GFX_goal_generic_construct_civilian
 		x = 44
-		y = 12
+		y = 14
 		cost = 10
 		completion_reward = {
-			765 = {
+			84 = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1162,7 +1279,7 @@ focus_tree = {
 		id = OWL_focus_22
 		icon = GFX_focus_generic_monarchy_2
 		x = 50
-		y = 8
+		y = 7
 		cost = 10
 		completion_reward = {
 			start_civil_war = {
@@ -1170,6 +1287,11 @@ focus_tree = {
 				ruling_party = neutrality
 				size = 0.4
 			}
+			retire_character = owlia_bloppa
+			retire_character = owlia_charlie
+			retire_character = owlia_logry
+			retire_character = owlia_kit
+			retire_character = owlia_rehowl
 		}
 		prerequisite = {
 			focus = Tied_Elections
@@ -1178,15 +1300,21 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_23
 		icon = GFX_focus_generic_spread_fascism
-		x = 55
-		y = 14
+		x = 58
+		y = 15
 		cost = 10
 		completion_reward = {
 			add_ideas = { nationalism }
+			retire_character = owlia_beaver
+			retire_character = owlia_garon
+			retire_character = owlia_goober
+			retire_character = owlia_jax
+			retire_character = owlia_torvi
+			retire_character = owlia_soup
 		}
 		prerequisite = {
+			focus = OWL_focus_49
 			focus = OWL_focus_27
-			focus = OWL_focus_29
 		}
 	}
 	focus = {
@@ -1223,8 +1351,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_25
 		icon = GFX_focus_GER_monarchy_compromise
-		x = 50
-		y = 11
+		x = 51
+		y = 10
 		cost = 10
 		completion_reward = {
 			add_stability = 0.15
@@ -1250,6 +1378,8 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.10
 			}
+			deactivate_advisor = owlia_beaver
+			deactivate_advisor = owlia_bloppa
 		}
 		prerequisite = {
 			focus = OWL_focus_22
@@ -1257,6 +1387,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_24
+			focus = OWL_focus_29
 		}
 		available = {
 			NOT = {
@@ -1267,8 +1398,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_23_copy
 		icon = GFX_focus_generic_attack_hungary
-		x = 54
-		y = 16
+		x = 58
+		y = 17
 		cost = 10
 		completion_reward = {
 			create_wargoal = {
@@ -1279,12 +1410,18 @@ focus_tree = {
 		prerequisite = {
 			focus = OWL_focus_23
 		}
+		mutually_exclusive = {
+			focus = OWL_focus_23_copy_copy_copy_copy_copy
+		}
+		bypass = {
+			has_completed_focus = OWL_focus_50_copy
+		}
 	}
 	focus = {
 		id = OWL_focus_23_copy_copy
 		icon = GFX_focus_generic_attack_romania
-		x = 56
-		y = 16
+		x = 60
+		y = 17
 		cost = 10
 		completion_reward = {
 			create_wargoal = {
@@ -1299,18 +1436,24 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_23_copy_copy_copy
 		icon = GFX_focus_AUS_heritage_of_an_empire
-		x = 55
-		y = 20
+		x = 59
+		y = 21
 		cost = 10
 		completion_reward = {
-			add_core_of = 46
-			add_core_of = 79
-			add_core_of = 81
-			add_core_of = 971
-			add_core_of = 77
-			add_core_of = 766
-			add_core_of = 78
-			add_core_of = 80
+			add_state_core = 46
+			add_state_core = 79
+			add_state_core = 81
+			add_state_core = 971
+			add_state_core = 77
+			add_state_core = 766
+			add_state_core = 78
+			add_state_core = 80
+			add_state_core = 155
+			add_state_core = 43
+			add_state_core = 973
+			add_state_core = 154
+			add_state_core = 974
+			add_state_core = 619
 		}
 		prerequisite = {
 			focus = OWL_focus_23_copy_copy_copy_copy
@@ -1322,13 +1465,14 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_23_copy_copy_copy_copy
 		icon = GFX_focus_generic_attack_yugoslavia
-		x = 54
-		y = 18
+		x = 58
+		y = 19
 		cost = 10
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = YUG
+			YUG = {
+				country_event = {
+					id = owlia_yugo.1
+				}
 			}
 		}
 		prerequisite = {
@@ -1339,15 +1483,15 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_27
 		icon = GFX_focus_RAJ_lions_of_the_great_war
-		x = 53
-		y = 12
+		x = 55
+		y = 11
 		cost = 10
 		completion_reward = {}
 		select_effect = {
 			add_ideas = { strong_fascist_influence }
 			start_civil_war = {
 				ideology = communism
-				ruling_party = communism
+				ruling_party = fascism
 				size = 0.1
 			}
 		}
@@ -1361,8 +1505,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_28
 		icon = GFX_focus_ETH_sway_the_warlords
-		x = 50
-		y = 13
+		x = 51
+		y = 12
 		cost = 10
 		completion_reward = {
 			add_political_power = 300
@@ -1375,13 +1519,14 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_29
 		icon = GFX_focus_ITA_guardia_nazionale_repubblicana
-		x = 60
+		x = 61
 		y = 9
 		cost = 10
 		prerequisite = {
 			focus = Fascist_victory
 		}
 		mutually_exclusive = {
+			focus = OWL_focus_26
 			focus = OWL_focus_24
 		}
 		completion_reward = {
@@ -1390,35 +1535,34 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.10
 			}
+			deactivate_advisor = owlia_beaver
+			deactivate_advisor = owlia_bloppa
+			promote_character = owlia_nebbie
 		}
 	}
 	focus = {
 		id = OWL_focus_30
-		icon = GFX_goal_generic_oil_refinery
-		x = 75
-		y = 3
+		icon = GFX_focus_generic_stockpile_fuel
+		x = 76
+		y = 4
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
-				name = oil_refining_bonus
+				name = synthetic_bonus
 				bonus = 1.0
-				uses = 3
-				technology = synthetic_oil
-				technology = improved_synthetic_oil
-				technology = advanced_synthetic_oil
+				uses = 1
+				category = synth_resources
 			}
 		}
 		prerequisite = {
-			focus = OWL_focus_12_copy
-			focus = OWL_focus_12
-			focus = OWL_focus_31_copy
-			focus = OWL_focus_31
+			focus = OWL_focus_10
+			focus = OWL_focus_9
 		}
 	}
 	focus = {
 		id = OWL_focus_31
 		icon = GFX_goal_generic_fortify_city
-		x = 77
+		x = 78
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -1451,7 +1595,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_31_copy
 		icon = GFX_focus_generic_army_attack
-		x = 79
+		x = 80
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -1472,7 +1616,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_32
 		icon = GFX_focus_generic_tank_production
-		x = 69
+		x = 62
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1481,6 +1625,85 @@ focus_tree = {
 				bonus = 1.0
 				uses = 3
 				category = cat_heavy_armor
+			}
+			division_template = {
+				name = "Heavy Tank Division"
+				regiments = {
+					motorized = {
+						x = 0
+						y = 0
+					}
+					motorized = {
+						x = 0
+						y = 1
+					}
+					motorized = {
+						x = 0
+						y = 2
+					}
+					motorized = {
+						x = 0
+						y = 3
+					}
+					motorized = {
+						x = 0
+						y = 4
+					}
+					heavy_armor = {
+						x = 1
+						y = 0
+					}
+					heavy_armor = {
+						x = 1
+						y = 1
+					}
+					heavy_armor = {
+						x = 1
+						y = 2
+					}
+					heavy_armor = {
+						x = 1
+						y = 3
+					}
+					heavy_armor = {
+						x = 1
+						y = 4
+					}
+					heavy_armor = {
+						x = 2
+						y = 0
+					}
+					heavy_armor = {
+						x = 2
+						y = 1
+					}
+					heavy_armor = {
+						x = 2
+						y = 2
+					}
+					heavy_armor = {
+						x = 2
+						y = 3
+					}
+					heavy_armor = {
+						x = 2
+						y = 4
+					}
+				}
+				support = {
+					mot_recon = {
+						x = 0
+						y = 0
+					}
+					engineer = {
+						x = 0
+						y = 1
+					}
+					artillery = {
+						x = 0
+						y = 2
+					}
+				}
 			}
 		}
 		prerequisite = {
@@ -1493,7 +1716,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_32_copy
 		icon = GFX_focus_generic_tank_assault
-		x = 71
+		x = 64
 		y = 4
 		cost = 10
 		prerequisite = {
@@ -1506,6 +1729,85 @@ focus_tree = {
 				uses = 3
 				category = cat_light_armor
 			}
+			division_template = {
+				name = "Light Tank Division"
+				regiments = {
+					motorized = {
+						x = 0
+						y = 0
+					}
+					motorized = {
+						x = 0
+						y = 1
+					}
+					motorized = {
+						x = 0
+						y = 2
+					}
+					motorized = {
+						x = 0
+						y = 3
+					}
+					motorized = {
+						x = 0
+						y = 4
+					}
+					light_armor = {
+						x = 1
+						y = 0
+					}
+					light_armor = {
+						x = 1
+						y = 1
+					}
+					light_armor = {
+						x = 1
+						y = 2
+					}
+					light_armor = {
+						x = 1
+						y = 3
+					}
+					light_armor = {
+						x = 1
+						y = 4
+					}
+					light_armor = {
+						x = 2
+						y = 0
+					}
+					light_armor = {
+						x = 2
+						y = 1
+					}
+					light_armor = {
+						x = 2
+						y = 2
+					}
+					light_armor = {
+						x = 2
+						y = 3
+					}
+					light_armor = {
+						x = 2
+						y = 4
+					}
+				}
+				support = {
+					mot_recon = {
+						x = 0
+						y = 0
+					}
+					engineer = {
+						x = 0
+						y = 1
+					}
+					artillery = {
+						x = 0
+						y = 2
+					}
+				}
+			}
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_32
@@ -1514,7 +1816,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_33
 		icon = GFX_goal_fortify_the_westwall
-		x = 77
+		x = 78
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1525,6 +1827,38 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			83 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6697
+				}
+			}
+			76 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3696
+				}
+			}
+			76 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 713
+				}
+			}
+			76 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 746
+				}
+			}
 		}
 		prerequisite = {
 			focus = OWL_focus_31
@@ -1533,12 +1867,121 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_15_copy
 		icon = GFX_goal_generic_special_forces
-		x = 74
-		y = 4
+		x = 67
+		y = 3
 		cost = 10
 		completion_reward = {
 			set_technology = {
 				sturmtruppe_battalion_tech = 1
+			}
+			division_template = {
+				name = "Storm Trooper Division"
+				regiments = {
+					artillery_brigade = {
+						x = 0
+						y = 0
+					}
+					artillery_brigade = {
+						x = 0
+						y = 1
+					}
+					artillery_brigade = {
+						x = 0
+						y = 2
+					}
+					artillery_brigade = {
+						x = 0
+						y = 3
+					}
+					artillery_brigade = {
+						x = 0
+						y = 4
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 3
+					}
+					infantry = {
+						x = 1
+						y = 4
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					infantry = {
+						x = 2
+						y = 1
+					}
+					infantry = {
+						x = 2
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 3
+					}
+					infantry = {
+						x = 2
+						y = 4
+					}
+					infantry = {
+						x = 3
+						y = 0
+					}
+					infantry = {
+						x = 3
+						y = 1
+					}
+					infantry = {
+						x = 3
+						y = 2
+					}
+					infantry = {
+						x = 3
+						y = 3
+					}
+					infantry = {
+						x = 3
+						y = 4
+					}
+				}
+				support = {
+					mot_recon = {
+						x = 0
+						y = 0
+					}
+					engineer = {
+						x = 0
+						y = 1
+					}
+					artillery = {
+						x = 0
+						y = 2
+					}
+					sturmtruppe = {
+						x = 0
+						y = 3
+					}
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division_template = "Storm Trooper Division"
+					amount = 1
+				}
 			}
 		}
 		prerequisite = {
@@ -1548,7 +1991,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_34
 		icon = GFX_goal_generic_demand_territory
-		x = 79
+		x = 81
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1561,7 +2004,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_35
 		icon = GFX_focus_AFG_a_modern_economy
-		x = 62
+		x = 90
 		y = -2
 		cost = 10
 		available = {
@@ -1580,7 +2023,7 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_36
 		icon = GFX_focus_BRA_ethical_internationalism
-		x = 60
+		x = 88
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -1594,14 +2037,16 @@ focus_tree = {
 			focus = OWL_focus_37
 		}
 		available = {
-			has_completed_focus = eco_soc
-			has_completed_focus = eco_soclib
+			OR = {
+				has_completed_focus = eco_soc
+				has_completed_focus = eco_soclib
+			}
 		}
 	}
 	focus = {
 		id = OWL_focus_37
 		icon = GFX_focus_RAJ_institutional_money_laundering
-		x = 64
+		x = 92
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -1615,14 +2060,19 @@ focus_tree = {
 			focus = OWL_focus_36
 		}
 		available = {
-			has_completed_focus = eco_lib
-			has_completed_focus = eco_soclib
+			OR = {
+				has_completed_focus = eco_lib
+				has_completed_focus = eco_soclib
+			}
+			NOT = {
+				has_government = communism
+			}
 		}
 	}
 	focus = {
 		id = OWL_focus_38
 		icon = GFX_goal_reichsautobahn
-		x = 62
+		x = 90
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -1657,7 +2107,7 @@ focus_tree = {
 		id = OWL_focus_13_copy_copy_copy_copy_copy_copy_copy_copy_copy
 		icon = GFX_focus_generic_befriend_hungary
 		x = 26
-		y = 12
+		y = 13
 		cost = 10
 		completion_reward = {
 			create_wargoal = {
@@ -1690,34 +2140,45 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_39
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		x = 42
-		y = 8
+		x = 41
+		y = 9
 		cost = 10
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = -0.05
-		}
-		prerequisite = {
-			focus = Democratic_Victory
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			promote_character = owlia_bloppa
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_40
+		}
+		prerequisite = {
+			focus = OWL_focus_43
 		}
 	}
 	focus = {
 		id = OWL_focus_40
 		icon = GFX_focus_generic_social_democracy
-		x = 36
-		y = 8
+		x = 37
+		y = 9
 		cost = 10
 		completion_reward = {
-			add_stability = 5
-		}
-		prerequisite = {
-			focus = Democratic_Victory
+			add_stability = 0.05
+			promote_character = owlia_logry
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_cosmetic_tag = OWL_Monarchy
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_39
+		}
+		prerequisite = {
+			focus = OWL_focus_43
 		}
 	}
 	focus = {
@@ -1750,22 +2211,22 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_21_copy_copy
 		icon = GFX_focus_AUS_womens_education_initiative
-		x = 33
-		y = 10
+		x = 30
+		y = 7
 		cost = 10
 		completion_reward = {
 			add_stability = 0.1
 		}
 		prerequisite = {
-			focus = OWL_focus_13_copy
-			focus = OWL_focus_40
+			focus = Communist_Victory
+			focus = Democratic_Victory
 		}
 	}
 	focus = {
 		id = allied_investments_copy
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 33
-		y = 14
+		x = 34
+		y = 16
 		cost = 10
 		completion_reward = {
 			add_research_slot = 1
@@ -1776,15 +2237,15 @@ focus_tree = {
 	}
 	focus = {
 		id = cede_to_hungary_copy_copy
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 45
-		y = 14
+		y = 16
 		cost = 10
 		completion_reward = {
-			765 = {
+			84 = {
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					type = arms_factory
+					level = 3
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 2
@@ -1792,6 +2253,7 @@ focus_tree = {
 		}
 		available = {
 			date > 1940.1.1
+			has_war = no
 		}
 		prerequisite = {
 			focus = cede_to_hungary_copy
@@ -1801,7 +2263,7 @@ focus_tree = {
 		id = OWL_focus_41
 		icon = GFX_focus_generic_surrender
 		x = 38
-		y = 15
+		y = 17
 		cost = 10
 		completion_reward = {
 			add_offsite_building = {
@@ -1824,8 +2286,8 @@ focus_tree = {
 	focus = {
 		id = OWL_focus_41_copy
 		icon = GFX_focus_INS_evacuate_soldiers_to_australia
-		x = 35
-		y = 14
+		x = 36
+		y = 17
 		cost = 10
 		completion_reward = {
 			add_offsite_building = {
@@ -1845,14 +2307,15 @@ focus_tree = {
 			focus = allied_investments
 		}
 		available = {
-			has_capitulated = yes
+			has_capitulated = no
 		}
+		available_if_capitulated = yes
 	}
 	focus = {
 		id = OWL_focus_23_copy_copy_copy_copy_copy
 		icon = GFX_goal_generic_territory_or_war
-		x = 52
-		y = 16
+		x = 56
+		y = 17
 		cost = 10
 		completion_reward = {
 			HUN = {
@@ -1863,6 +2326,602 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = OWL_focus_23
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_23_copy
+		}
+		bypass = {
+			has_completed_focus = OWL_focus_50_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_42
+		icon = GFX_focus_AFG_scavenging
+		x = 80
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_company_bonus
+				bonus = 1.0
+				uses = 3
+				category = support_tech
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_31_copy
+			focus = OWL_focus_31
+		}
+	}
+	focus = {
+		id = OWL_focus_43
+		icon = GFX_focus_generic_election
+		x = 39
+		y = 8
+		cost = 2
+		prerequisite = {
+			focus = OWL_focus_21_copy
+		}
+		prerequisite = {
+			focus = OWL_focus_21
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = cede_to_hungary_copy_copy_copy
+		icon = GFX_goal_generic_oil_refinery
+		x = 43
+		y = 16
+		cost = 10
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 84
+			}
+		}
+		available = {
+			date > 1938.1.1
+			has_war = no
+		}
+		prerequisite = {
+			focus = cede_to_hungary_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_44
+		icon = GFX_focus_generic_spur_communist_revolutions
+		x = 22
+		y = 8
+		cost = 10
+		completion_reward = {
+			start_civil_war = {
+				ideology = democratic
+				ruling_party = communism
+				size = 0.2
+			}
+		}
+		prerequisite = {
+			focus = Communist_Victory
+		}
+	}
+	focus = {
+		id = OWL_focus_45
+		icon = GFX_focus_generic_monarchist_sentiment
+		x = 48
+		y = 12
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = {
+					GER = {
+						has_government = neutrality
+					}
+				}
+				add_to_faction = GER
+			}
+			else = {
+				set_rule = {
+					can_create_factions = yes
+				}
+				create_faction = "Central Powers"
+			}
+		}
+		mutually_exclusive = {
+			focus = Joining_the_allies
+			focus = Joining_the_allies_copy
+		}
+		prerequisite = {
+			focus = OWL_focus_24
+		}
+	}
+	focus = {
+		id = OWL_focus_45_copy
+		icon = GFX_focus_generic_monarchist_sentiment
+		x = 48
+		y = 14
+		cost = 10
+		prerequisite = {
+			focus = OWL_focus_45
+		}
+	}
+	focus = {
+		id = OWL_focus_46
+		icon = GFX_focus_BRA_ban_communist_party
+		x = 45
+		y = 11
+		cost = 10
+		completion_reward = {
+			retire_character = owlia_beaver
+			retire_character = owlia_garon
+			retire_character = owlia_goober
+			retire_character = owlia_jax
+			retire_character = owlia_torvi
+			retire_character = owlia_soup
+		}
+		prerequisite = {
+			focus = OWL_focus_24
+			focus = OWL_focus_39
+		}
+	}
+	focus = {
+		id = OWL_focus_38_copy
+		icon = GFX_focus_RAJ_war_taxes
+		x = 94
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_stability = 0.5
+		}
+		prerequisite = {
+			focus = OWL_focus_37
+		}
+	}
+	focus = {
+		id = OWL_focus_38_copy_copy
+		icon = GFX_focus_generic_economic_recovery
+		x = 94
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_ideas = { AUS_economic_boom }
+		}
+		prerequisite = {
+			focus = OWL_focus_48
+		}
+		prerequisite = {
+			focus = OWL_focus_38_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_38_copy_copy_copy
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 92
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_ideas = { free_trade }
+		}
+		prerequisite = {
+			focus = OWL_focus_37
+		}
+	}
+	focus = {
+		id = OWL_focus_47
+		icon = GFX_focus_PER_increase_oil_sales
+		x = 91
+		y = 4
+		cost = 10
+		completion_reward = {
+			82 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_38
+		}
+		prerequisite = {
+			focus = OWL_focus_37
+		}
+		available = {
+			has_technology = excavation_2
+		}
+	}
+	focus = {
+		id = OWL_focus_48
+		icon = GFX_focus_PER_invite_oil_nations
+		x = 92
+		y = 5
+		cost = 10
+		completion_reward = {
+			84 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_38_copy_copy_copy
+		}
+		prerequisite = {
+			focus = OWL_focus_47
+		}
+	}
+	focus = {
+		id = OWL_focus_49
+		icon = GFX_focus_GER_fuhrerprinzip_hess
+		x = 61
+		y = 11
+		cost = 10
+		completion_reward = {
+			add_ideas = { sour_loser fascist_assault_divisions }
+			retire_character = owlia_bloppa
+			retire_character = owlia_charlie
+			retire_character = owlia_logry
+			retire_character = owlia_kit
+			retire_character = owlia_rehowl
+			retire_character = owlia_beaver
+			retire_character = owlia_garon
+			retire_character = owlia_goober
+			retire_character = owlia_jax
+			retire_character = owlia_torvi
+			retire_character = owlia_soup
+		}
+		prerequisite = {
+			focus = OWL_focus_29
+		}
+	}
+	focus = {
+		id = OWL_focus_50
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 54
+		y = 14
+		cost = 10
+		completion_reward = {
+			set_rule = {
+				can_join_factions = no
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_49
+			focus = OWL_focus_27
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_50_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_50_copy
+		icon = GFX_focus_generic_fascist_troops
+		x = 62
+		y = 14
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = OWL_focus_49
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_50
+		}
+	}
+	focus = {
+		id = allied_investments_copy_copy
+		icon = GFX_focus_generic_money_for_equipment
+		x = 64
+		y = 16
+		cost = 10
+		completion_reward = {
+			84 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_50_copy
+		}
+	}
+	focus = {
+		id = allied_investments_copy_copy_copy
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 62
+		y = 16
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+		prerequisite = {
+			focus = OWL_focus_50_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_51
+		icon = GFX_focus_FIN_socialist_welfare
+		x = 88
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_stability = 0.1
+		}
+		prerequisite = {
+			focus = OWL_focus_36
+		}
+	}
+	focus = {
+		id = OWL_focus_51_copy
+		icon = GFX_goal_generic_demand_territory
+		x = 86
+		y = 3
+		cost = 10
+		completion_reward = {
+			84 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_36
+		}
+	}
+	focus = {
+		id = OWL_focus_52
+		icon = GFX_goal_generic_oil_refinery
+		x = 89
+		y = 5
+		cost = 10
+		completion_reward = {
+			82 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_36
+		}
+		prerequisite = {
+			focus = OWL_focus_38
+		}
+		available = {
+			has_technology = synthetic_oil
+		}
+	}
+	focus = {
+		id = OWL_focus_53
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 86
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_ideas = { partial_economic_mobilisation }
+			add_war_support = 0.1
+		}
+		prerequisite = {
+			focus = OWL_focus_51_copy
+		}
+		prerequisite = {
+			focus = OWL_focus_51
+		}
+	}
+	focus = {
+		id = OWL_focus_54
+		icon = GFX_goal_generic_major_war
+		x = 81
+		y = 11
+		cost = 10
+		completion_reward = {}
+		available = {
+			has_civil_war = no
+			OR = {
+				is_at_war = yes
+				world_tension > 0.5
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_57
+		}
+		prerequisite = {
+			focus = OWL_focus_38_copy_copy_copy_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_55
+		icon = GFX_focus_generic_military_industry
+		x = 84
+		y = 13
+		cost = 10
+		completion_reward = {
+			84 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_55_copy
+		}
+		prerequisite = {
+			focus = OWL_focus_54
+		}
+		available = {
+			has_completed_focus = OWL_focus_38_copy_copy
+		}
+	}
+	focus = {
+		id = OWL_focus_55_copy
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = 78
+		y = 13
+		cost = 10
+		completion_reward = {
+			84 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		mutually_exclusive = {
+			focus = OWL_focus_55
+		}
+		prerequisite = {
+			focus = OWL_focus_54
+		}
+		available = {
+			has_completed_focus = OWL_focus_53
+		}
+	}
+	focus = {
+		id = OWL_focus_56
+		icon = GFX_focus_generic_atlantic_coast
+		x = 97
+		y = -2
+		cost = 10
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+	}
+	focus = {
+		id = OWL_focus_57
+		icon = GFX_focus_PRC_army_command
+		x = 72
+		y = 7
+		cost = 10
+		completion_reward = {
+			army_experience = 20
+		}
+		prerequisite = {
+			focus = OWL_focus_59_copy
+		}
+		prerequisite = {
+			focus = OWL_focus_59
+		}
+	}
+	focus = {
+		id = OWL_focus_58
+		icon = GFX_focus_CZE_army_reform
+		x = 72
+		y = 3
+		cost = 10
+		completion_reward = {
+			army_experience = 20
+		}
+		prerequisite = {
+			focus = OWL_focus_10
+			focus = OWL_focus_9
+		}
+	}
+	focus = {
+		id = OWL_focus_59
+		icon = GFX_focus_generic_military_mission
+		x = 73
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			army_experience = 50
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_58
+		}
+	}
+	focus = {
+		id = OWL_focus_59_copy
+		icon = GFX_focus_generic_military_mission
+		x = 71
+		y = 5
+		cost = 10
+		completion_reward = {
+			army_experience = 50
+		}
+		available = {
+			at_war = yes
+		}
+		prerequisite = {
+			focus = OWL_focus_58
+		}
+	}
+	focus = {
+		id = OWL_focus_38_copy_copy_copy_copy
+		icon = GFX_goal_reichsautobahn
+		x = 90
+		y = 8
+		cost = 10
+		completion_reward = {
+			82 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			83 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			84 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = OWL_focus_38_copy_copy
+			focus = OWL_focus_53
+		}
+		prerequisite = {
+			focus = OWL_focus_38
 		}
 	}
 }

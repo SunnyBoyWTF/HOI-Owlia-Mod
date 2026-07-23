@@ -27,7 +27,7 @@ characters = {
 		country_leader = {
 			ideology = liberalism
 			expire = "1965.1.1.1"
-			traits = { GER_staunch_social_democrat }
+			traits = { HUN_popular_liberal }
 			id = -1
 		}
 		advisor = {
@@ -72,13 +72,26 @@ characters = {
 		country_leader = {
 			ideology = marxism
 			expire = "1965.1.1.1"
-			traits = { AUS_communist_revolutionary GER_militant_communist }
+			traits = { AUS_communist_revolutionary }
 			id = -1
 		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_owlia_goober
+				small = GFX_portrait_owlia_goober_small
 			}
+			navy = {
+				large = GFX_portrait_owlia_goober_navy
+			}
+			army = {
+				large = GFX_portrait_owlia_goober_army
+				small = GFX_portrait_owlia_goober_army_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = owlia_goober
+			traits = { army_chief_army_high_command army_chief_morale_2 }
 		}
 	}
 	owlia_dead2 = {
@@ -216,6 +229,115 @@ characters = {
 			idea_token = owlia_seb
 			cost = 90
 			traits = { fascist_corporatist }
+		}
+	}
+	owlia_logry = {
+		name = owlia_logry
+		portraits = {
+			civilian = {
+				large = GFX_portrait_owlia_logry
+			}
+			army = {
+				small = GFX_portrait_owlia_logry_army_small
+				large = GFX_portrait_owlia_logry_army
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1.1"
+			traits = { GER_staunch_social_democrat }
+			id = -1
+		}
+		corps_commander = {
+			traits = {}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	owlia_soup = {
+		name = owlia_soup
+		portraits = {
+			civilian = {
+				large = GFX_portrait_owlia_soup
+				small = GFX_portrait_owlia_soup_small
+			}
+			army = {
+				small = GFX_portrait_owlia_soup_army_small
+				large = GFX_portrait_owlia_soup_army
+			}
+			navy = {
+				large = GFX_portrait_owlia_soup_navy
+			}
+		}
+		country_leader = {
+			ideology = populism
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
+		}
+		field_marshal = {
+			traits = { commando }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 6
+		}
+	}
+	owlia_kit = {
+		name = owlia_kit
+		portraits = {
+			civilian = {
+				large = GFX_portrait_owlia_kit
+				small = GFX_portrait_owlia_kit_small
+			}
+			army = {
+				large = GFX_portrait_owlia_kit_army
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	owlia_cora = {
+		name = owlia_cora
+		portraits = {
+			civilian = {
+				large = GFX_portrait_owlia_cora
+				small = GFX_portrait_owlia_cora_small
+			}
+			navy = {
+				large = GFX_portrait_owlia_cora_navy
+			}
+			army = {
+				small = GFX_portrait_owlia_cora_army_small
+				large = GFX_portrait_owlia_cora_army
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	owlia_milo = {
+		name = owlia_milo
+		advisor = {
+			slot = political_advisor
+			idea_token = owlia_milo
+			cost = 100
+			traits = { monarchist_media_mogul }
 		}
 	}
 }
