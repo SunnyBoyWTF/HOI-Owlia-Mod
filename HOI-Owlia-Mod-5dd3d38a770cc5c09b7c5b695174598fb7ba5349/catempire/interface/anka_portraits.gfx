@@ -167,4 +167,56 @@ spriteTypes = {
 		name = "GFX_portrait_owlia_goober_army_small"
 		texturefile = "gfx/leaders/OWL/portrait_owlia_goober_army_small.dds"
 	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_soup"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_soup.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_soup_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_soup_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_soup_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_soup_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_soup_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_soup_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_soup_navy"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_soup_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_kit"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_kit.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_kit_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_kit_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_kit_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_kit_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_cora"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_cora.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_cora_navy"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_cora_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_cora_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_cora_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_cora_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_cora_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_cora_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_cora_army.dds"
+	}
 }

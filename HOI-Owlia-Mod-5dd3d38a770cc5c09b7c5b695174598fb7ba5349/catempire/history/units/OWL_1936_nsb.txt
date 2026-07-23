@@ -1,0 +1,391 @@
+﻿division_template = {
+	name = "Infantrie-Division"				# Infantry Brigade
+
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Kavalleriedivision" 					# Cavalry Brigade
+	# Note: has 2x bicycle inf bns added during 1938-40 mobilization
+
+	division_names_group = GER_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   # recon bn of tankettes, ACs, mot inf
+	}
+}
+
+units = {
+	division= {
+		#name = "1. Kavalleriedivision"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9606
+		division_template = "Kavalleriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "2. Kavalleriedivision"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9606
+		division_template = "Kavalleriedivision"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# I Hadtest
+	division= {
+		#name = "1. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "2. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# II Hadtest
+	division= {
+		#name = "3. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "4. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# III Hadtest
+	division= {
+		#name = "5. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "6. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# IV Hadtest
+	division= {
+		#name = "7. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "8. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# V Hadtest
+	division= {
+		#name = "9. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "10. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# VI Hadtest
+	division= {
+		#name = "11. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "12. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# VII Hadtest
+	division= {
+		#name = "13. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "14. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "15. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "16. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "17. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "18. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "19. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "20. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "21. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "22. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "23. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		#name = "24. Infantrie-Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9606
+		division_template = "Infantrie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "OWL"
+		}
+		requested_factories = 2
+		progress = 0.68
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "OWL"
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_1
+			creator = "OWL"
+		}
+		requested_factories = 1
+		progress = 0.60
+		efficiency = 100
+	}
+}
