@@ -1,0 +1,35 @@
+add_namespace = owlia_hungar
+country_event = {
+	id = owlia_hungar.1
+	title = owliar_titar
+	desc = owlia_desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = Surrender to Owlia
+		ai_chance = {
+			ai_chance = {
+				factor = 90
+			}
+		}
+		154 = {
+			transfer_state = OWL
+		}
+		original_recipient_only = yes
+	}
+	option = {
+		name = owlia_hungar.1.a
+		original_recipient_only = yes
+		HUN = {
+			declare_war_on = {
+				target = OWL
+				type = topple_government
+			}
+		}
+		ai_chance = {
+			ai_chance = {
+				factor = 10
+			}
+		}
+	}
+}
