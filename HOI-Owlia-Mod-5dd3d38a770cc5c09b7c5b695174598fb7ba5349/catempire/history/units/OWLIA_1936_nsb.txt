@@ -1,0 +1,106 @@
+﻿division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Motorized Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized_artillery = { x = 3 y = 0 }
+		motorized_artillery = { x = 3 y = 1 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+
+	division = {
+		name = "1st Owlian Infantry Division"
+		location = 6711
+		division_template = "Infantry Division"
+	}
+
+	division = {
+		name = "2nd Owlian Infantry Division"
+		location = 6711
+		division_template = "Infantry Division"
+	}
+
+	division = {
+		name = "3rd Owlian Infantry Division"
+		location = 9606
+		division_template = "Infantry Division"
+	}
+
+	division = {
+		name = "4th Owlian Infantry Division"
+		location = 690
+		division_template = "Infantry Division"
+	}
+
+	division = {
+		name = "5th Owlian Infantry Division"
+		location = 3696
+		division_template = "Infantry Division"
+	}
+
+
+	division = {
+		name = "1st Owlian Cavalry Division"
+		location = 11608
+		division_template = "Cavalry Brigade"
+	}
+
+	division = {
+		name = "2nd Owlian Cavalry Division"
+		location = 6682
+		division_template = "Cavalry Brigade"
+	}
+	division = {
+		name = "1st Owlian Motorized Division"
+		location = 6682
+		division_template = "Cavalry Brigade"
+	}
+}

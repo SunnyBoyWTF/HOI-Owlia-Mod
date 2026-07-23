@@ -1,6 +1,6 @@
 set_research_slots = 3
 set_stability = 0.1
-oob = "OWL_1936_nsb"
+oob = "OWLIA_1936_nsb"
 set_war_support = 0.1
 set_politics = {
 	ruling_party = neutrality
