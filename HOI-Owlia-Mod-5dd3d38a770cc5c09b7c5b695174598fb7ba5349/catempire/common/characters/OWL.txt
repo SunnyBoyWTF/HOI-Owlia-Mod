@@ -58,6 +58,12 @@ characters = {
 			idea_token = owlia_nebbie
 			traits = { AST_equitable_diplomat }
 		}
+		country_leader = {
+			ideology = gen_nazism
+			expire = "1965.1.1.1"
+			traits = { GER_der_fuhrer }
+			id = -1
+		}
 		corps_commander = {
 			traits = { demoted }
 			skill = 2
@@ -230,6 +236,14 @@ characters = {
 			cost = 90
 			traits = { fascist_corporatist }
 		}
+		field_marshal = {
+			traits = {}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
 	}
 	owlia_logry = {
 		name = owlia_logry
@@ -330,6 +344,14 @@ characters = {
 			maneuvering_skill = 2
 			coordination_skill = 2
 		}
+		corps_commander = {
+			traits = {}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
 	}
 	owlia_milo = {
 		name = owlia_milo
@@ -338,6 +360,98 @@ characters = {
 			idea_token = owlia_milo
 			cost = 100
 			traits = { monarchist_media_mogul }
+		}
+	}
+	owlia_krabat = {
+		name = owlia_krabat
+		portraits = {
+			army = {
+				large = GFX_portrait_owlia_krabat_army
+				small = GFX_portrait_owlia_krabat_army_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = owlia_krabat
+			cost = 90
+			traits = { SWI_fascist_propagandist }
+		}
+		corps_commander = {
+			traits = {}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	owlia_aero = {
+		name = owlia_aero
+		portraits = {
+			civilian = {
+				large = GFX_portrait_owlia_aero
+				small = GFX_portrait_owlia_aero_small
+			}
+			army = {
+				large = GFX_portrait_owlia_aero_army
+				small = GFX_portrait_owlia_aero_army_small
+			}
+			navy = {
+				large = GFX_portrait_owlia_aero_navy
+			}
+		}
+		country_leader = {
+			ideology = populism
+			expire = "1965.1.1.1"
+			traits = {}
+			id = -1
+		}
+	}
+	owlia_remi = {
+		name = owlia_remi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_owlia_remi
+				small = GFX_portrait_owlia_remi_small
+			}
+			army = {
+				large = GFX_portrait_owlia_remi_army
+				small = GFX_portrait_owlia_remi_army_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = owlia_remi
+			traits = { ARG_socialist_feminist }
+		}
+		corps_commander = {
+			traits = {}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+	owlia_terra = {
+		name = owlia_terra
+		portraits = {
+			civilian = {
+				small = GFX_portrait_owlia_terra_small
+				large = GFX_portrait_owlia_terra
+			}
+			army = {
+				small = GFX_portrait_owlia_terra_army_small
+				large = GFX_portrait_owlia_terra_army
+			}
+		}
+		corps_commander = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 }
