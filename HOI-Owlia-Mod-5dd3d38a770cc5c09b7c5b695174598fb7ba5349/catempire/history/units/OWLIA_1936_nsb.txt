@@ -101,6 +101,6 @@ units = {
 	division = {
 		name = "1st Owlian Motorized Division"
 		location = 6682
-		division_template = "Cavalry Brigade"
+		division_template = "Motorized Division"
 	}
 }

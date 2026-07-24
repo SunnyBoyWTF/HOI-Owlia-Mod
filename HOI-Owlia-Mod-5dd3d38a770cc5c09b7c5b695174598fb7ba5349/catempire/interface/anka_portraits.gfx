@@ -219,4 +219,64 @@ spriteTypes = {
 		name = "GFX_portrait_owlia_cora_army"
 		texturefile = "gfx/leaders/OWL/portrait_owlia_cora_army.dds"
 	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_krabat_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_krabat_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_krabat_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_krabat_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_aero"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_aero.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_aero_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_aero_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_aero_navy"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_aero_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_aero_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_aero_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_aero_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_aero_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_remi"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_remi.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_remi_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_remi_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_remi_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_remi_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_remi_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_remi_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_terra_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_terra_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_terra_army_small"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_terra_army_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_terra"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_terra.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_owlia_terra_army"
+		texturefile = "gfx/leaders/OWL/portrait_owlia_terra_army.dds"
+	}
 }
