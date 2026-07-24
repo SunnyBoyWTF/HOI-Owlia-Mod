@@ -2229,6 +2229,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = OWL_focus_40
+			focus = OWL_focus_39_copy
 		}
 		prerequisite = {
 			focus = OWL_focus_43
@@ -3670,6 +3671,7 @@ focus_tree = {
 			promote_character = owlia_aero
 		}
 		mutually_exclusive = {
+			focus = OWL_focus_39
 			focus = OWL_focus_40
 		}
 		prerequisite = {
@@ -3680,7 +3682,7 @@ focus_tree = {
 		id = OWL_focus_60_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 		icon = GFX_focus_AFG_against_kabul
 		x = 39
-		y = 11
+		y = 10
 		cost = 10
 		completion_reward = {
 			add_stability = 0.1
@@ -3693,12 +3695,13 @@ focus_tree = {
 		id = OWL_focus_60_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy_copy
 		icon = GFX_focus_BEL_la_dame_blanche
 		x = 43
-		y = 11
+		y = 10
 		cost = 10
 		completion_reward = {
 			add_stability = 0.05
 			add_ideas = { FRA_womens_suffrage }
 			add_political_power = -50
+			recruit_character = owlia_remi
 		}
 		prerequisite = {
 			focus = OWL_focus_39_copy
